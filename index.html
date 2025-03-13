@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ConnectLiftMate – Your LinkedIn Connection Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.dots.min.js"></script>
+    <link rel="stylesheet" href="LandingPage/index.css">
+    <script src="LandingPage/index.js"></script>
+</head>
+
+<body>
+    <header id="animated-header">
+        <div id="vanta-bg"></div> <!-- Vanta.js Background -->
+        <div class="gradient-overlay"></div> <!-- Gradient Layer -->
+        <h1 id="hero-title">ConnectLiftMate</h1>
+        <p>Where your voice meets your connections</p>
+        <a href="#" target="_blank">
+            <button class="cta-button"><i class="fa-brands fa-chrome"></i> Add to Chrome</button>
+        </a>
+    </header>
+
+    <section class="section">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h4>1-Click Message Insertion</h4>
+                <p>Paste connection notes instantly without copy-paste hassle.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Default Note Selection</h4>
+                <p>Set your most-used note as default and save time on outreach.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <h4>Edit Notes Easily</h4>
+                <p>Edit, manage, and organize your templates on the fly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Step 1: Add Your Notes</h3>
+                    <p>Type and save your favorite connection messages inside the extension.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Step 2: Select a Default Note</h3>
+                    <p>Pick one note to auto-insert or keep multiple for variety.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Step 3: Insert on LinkedIn</h3>
+                    <p>Click a button to instantly fill the LinkedIn note field — done!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="screenshot">
+            <h2 style="margin-top:60px;">UI Preview</h2>
+            <img src="screenshot-demo.png" alt="ConnectLiftMate UI Preview">
+            <p style="font-size: 13px; color: #888;">(Screenshot of extension popup)</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Popular Message Templates</h2>
+        <div class="templates-grid">
+            <div class="template-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3>Message to a Recruiter</h3>
+                <p>
+                    Hi [Recruiter's Name], I came across your profile and was truly impressed by your work at [Company Name]. 
+                    I'm currently exploring opportunities in [Relevant Role/Domain] and would love to stay connected. Looking forward to learning more about the exciting work your team is doing!
+                </p>
+            </div>
+
+            <div class="template-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-user-check"></i>
+                </div>
+                <h3>Referral Request Message</h3>
+                <p>
+                    Hi [Person's Name], I hope you're doing well! I'm really inspired by your journey at [Company Name]. 
+                    I'm actively exploring roles there and was wondering if you'd be open to referring me or sharing some insights about the hiring process. Would deeply appreciate it!
+                </p>
+            </div>
+
+            <div class="template-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h3>Message to Learn from Industry Experts</h3>
+                <p>
+                    Hi [Name], your journey and the impact you've made in [Domain/Field] are truly inspiring. 
+                    As a student passionate about data and tech, I'd love to connect and learn from your experiences. Looking forward to staying connected!
+                </p>
+            </div>
+
+            <div class="template-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-people-arrows"></i>
+                </div>
+                <h3>Message to Peers / Fellow Students</h3>
+                <p>
+                    Hey [Name], I noticed you're also exploring the data/tech space — always great to connect with like-minded learners! 
+                    Let's stay in touch and grow together in our journey.
+                </p>
+            </div>
+
+            <div class="template-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Message to Alumni / College Seniors</h3>
+                <p>
+                    Hi [Name], as a fellow [University Name] student, I admire your journey into [Industry/Company Name]. 
+                    Would love to connect and seek your advice as I navigate my early career path!
+                </p>
+            </div>
+        </div>
+
+        <div class="template-buttons">
+            <a href="../templates.html">
+                <button class="cta-button"><i class="fa-solid fa-file-lines"></i> Templates</button>
+            </a>
+            <a href="../job-tracker.html">
+                <button class="cta-button"><i class="fa-solid fa-briefcase"></i> Job Tracker</button>
+            </a>
+            <a href="../support.html">
+                <button class="cta-button"><i class="fa-solid fa-headset"></i> Support</button>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 ConnectLiftMate • Made with 💙 for smart connectors.
+    </footer>
+
+</body>
+</html>

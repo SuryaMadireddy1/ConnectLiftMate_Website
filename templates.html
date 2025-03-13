@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Templates - ConnectLiftMate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom right, #e6f0ff, #f9fbfc);
+            color: #222;
+            text-align: center;
+        }
+
+        /* Header with Gradient */
+        header {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #4677d9, #0099cc);
+            color: white;
+            border-bottom-left-radius: 60% 10%;
+            border-bottom-right-radius: 60% 10%;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Stacked Layout */
+        .templates-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            width: 90%;
+        }
+
+        .template-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 18px rgba(0, 119, 181, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-left: 6px solid #0077b5;
+        }
+
+        /* Hover Effects */
+        .template-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 119, 181, 0.2);
+        }
+
+        /* Template Header */
+        .template-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #0077b5;
+            margin-bottom: 8px;
+        }
+
+        .template-header i {
+            font-size: 24px;
+            color: #005f90;
+        }
+
+        /* Message Styling */
+        .message {
+            padding: 10px;
+            background: #f9fcff;
+            border-radius: 8px;
+            font-size: 15px;
+            line-height: 1.5;
+            box-shadow: 0 2px 6px rgba(0, 119, 181, 0.1);
+            margin-bottom: 6px;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: #0077b5;
+            text-decoration: none;
+            border-radius: 24px;
+            transition: 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 119, 181, 0.2);
+        }
+
+        .back-button:hover {
+            background: #005f90;
+        }
+
+        /* Fade-in Animation */
+        .template-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .template-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Message Templates</h1>
+        <p>Use these ready-made LinkedIn message templates for quick outreach.</p>
+    </header>
+
+    <div class="templates-container">
+        <!-- Connection Request -->
+        <div class="template-card">
+            <div class="template-header"><i class="fa-solid fa-user-plus"></i> Connection Request</div>
+            <div class="message">Hi [Name], I came across your profile and was impressed! Would love to connect.</div>
+            <div class="message">Hey [Name], I see we have mutual connections in [Industry/Company]. Let’s connect!</div>
+            <div class="message">Hello [Name], your work at [Company] is inspiring. I’d love to stay in touch!</div>
+            <div class="message">Hi [Name], I admire your experience in [Field]. Let’s connect and exchange ideas!</div>
+            <div class="message">Hi [Name], I’m building my network in [Industry] and would love to connect with you!</div>
+        </div>
+
+        <!-- Message to a Recruiter -->
+        <div class="template-card">
+            <div class="template-header"><i class="fa-solid fa-briefcase"></i> Message to a Recruiter</div>
+            <div class="message">Hi [Recruiter's Name], I’m exploring opportunities in [Field] and would love to connect!</div>
+            <div class="message">Hello [Recruiter's Name], I admire the hiring work you do at [Company]. Would love to connect!</div>
+            <div class="message">Hi [Recruiter], I’d love to learn more about [Role] opportunities at [Company]. Let’s connect!</div>
+            <div class="message">Hey [Recruiter], I’m actively looking for new roles in [Field]. Would love to stay in touch!</div>
+            <div class="message">Hi [Recruiter], I see you’re hiring for [Role]. I’m interested and would love to connect!</div>
+        </div>
+
+        <!-- Referral Request -->
+        <div class="template-card">
+            <div class="template-header"><i class="fa-solid fa-user-check"></i> Referral Request</div>
+            <div class="message">Hi [Name], I admire your work at [Company] and would love to ask about a referral.</div>
+            <div class="message">Hello [Name], I’m interested in [Company]. Would you be open to a referral chat?</div>
+            <div class="message">Hi [Name], I saw you work at [Company]. Would love to know about the hiring process!</div>
+            <div class="message">Hey [Name], I’d love your insights on working at [Company] and potential referrals!</div>
+            <div class="message">Hi [Name], I’m applying for [Role] at [Company]. Would appreciate any guidance or referral!</div>
+        </div>
+
+        <!-- Networking Message -->
+        <div class="template-card">
+            <div class="template-header"><i class="fa-solid fa-comments"></i> Networking Message</div>
+            <div class="message">Hey [Name], I noticed we're both in [Industry]! Would love to connect and exchange insights.</div>
+            <div class="message">Hi [Name], your experience in [Field] is inspiring! Let’s connect and share knowledge.</div>
+            <div class="message">Hello [Name], I see we both attended [University]! Would love to connect and chat.</div>
+            <div class="message">Hi [Name], I’d love to connect and hear more about your work at [Company].</div>
+            <div class="message">Hey [Name], I’m expanding my network in [Industry] and would love to stay connected!</div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const templates = document.querySelectorAll(".template-card");
+
+        function fadeInOnScroll() {
+            templates.forEach((card) => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < window.innerHeight - 50) {
+                    card.classList.add("visible");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", fadeInOnScroll);
+        fadeInOnScroll();
+    });
+    </script>
+
+</body>
+</html>
