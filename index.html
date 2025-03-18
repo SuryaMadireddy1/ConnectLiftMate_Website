@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.dots.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="LandingPage/index.css">
     <script src="LandingPage/index.js"></script>
 </head>
@@ -85,13 +86,65 @@
                 <img src="Images/image2.png" alt="Screenshot 2" style="width: 30%; max-width: 300px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                 <img src="Images/image3.png" alt="Screenshot 3" style="width: 30%; max-width: 300px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
             </div>
-        
-            <p style="font-size: 13px; color: #888; text-align: center;">
-                (Screenshots of extension UI and features)
-            </p>
         </div>
-        
     </section>
+    <section class="section">
+        <h2>Watch ConnectLiftMate in Action</h2>
+        
+        <!-- Featured Main Video (Big) -->
+        <div class="featured-video">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/ceAs1syobiM" 
+                title="Connection Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    
+        <!-- Video Grid (Three Smaller Videos Below) -->
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/ceAs1syobiM" title="YouTube video player" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ceAs1syobiM" title="YouTube video player" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ceAs1syobiM" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+
+    </section>
+    
+<style>
+    /* Featured Video - Large */
+.featured-video iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Grid - Smaller Thumbnails */
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-grid iframe {
+    width: 30%;
+    max-width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .video-grid iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+    }
+}
+</style>   
 
     <section class="section">
         <h2>Popular Message Templates</h2>
@@ -156,10 +209,10 @@
             <a href="templates/">
                 <button class="cta-button"><i class="fa-solid fa-file-lines"></i> Templates</button>
             </a>
-            <a href="job-tracker.html">
+            <a href="tracker/">
                 <button class="cta-button"><i class="fa-solid fa-briefcase"></i> Job Tracker</button>
             </a>
-            <a href="support.html">
+            <a href="support/">
                 <button class="cta-button"><i class="fa-solid fa-headset"></i> Support</button>
             </a>
         </div>
