@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectLiftMate – Built for Your Peace of Mind</title>
+    <style>
+        :root {
+            --brand-color: #3b5bdb;
+            --text-color: #2a2a40;
+            --bg-color: linear-gradient(135deg, #e5ebff, #f3f6ff);
+            --card-bg: #ffffff;
+            --footer-bg: #f0f4ff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--brand-color);
+            margin-bottom: 18px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #3b5bdb;
+            max-width: 840px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 1.2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .highlight-block {
+            background: #ecf1ff;
+            padding: 20px 24px;
+            border-radius: 14px;
+            margin: 50px 0 40px 0;
+            font-size: 1.2rem;
+            text-align: center;
+            font-style: italic;
+            color: #2a2a40;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 1s;
+        }
+
+        .faq-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+            margin-bottom: 35px;
+            padding: 28px;
+            border-left: 5px solid var(--brand-color);
+            opacity: 0;
+            animation: fadeInUp 0.8s forwards;
+            animation-delay: 1.2s;
+        }
+
+        .faq-card h3 {
+            font-size: 1.5rem;
+            color: var(--brand-color);
+            margin-bottom: 14px;
+        }
+
+        .faq-card p {
+            font-size: 1.1rem;
+            color: #2a2a40;
+        }
+
+        .section {
+            margin-top: 70px;
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            opacity: 0;
+            animation: fadeInUp 0.8s forwards;
+            animation-delay: 1.2s;
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            color: var(--brand-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section ul {
+            list-style: disc;
+            padding-left: 28px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .section ul li {
+            margin-bottom: 12px;
+        }
+
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: var(--brand-color);
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            z-index: 9999;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            margin-top: 80px;
+            /* Ensures footer is not hidden by the sticky CTA */
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: #3b5bdb;
+            text-decoration: none;
+            border-radius: 24px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 119, 181, 0.25);
+        }
+
+        .back-button:hover {
+            background: #3b5bdb;
+            transform: scale(1.05);
+        }
+
+
+        footer {
+            background: var(--footer-bg);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+            margin-top: 60px;
+        }
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.1rem;
+            }
+
+            .faq-card,
+            .section {
+                padding: 24px 18px;
+            }
+
+            .sticky-cta {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Let’s Fix the Hidden Stress You’ve Been Carrying </h1>
+            <p>Connectlift Mate is not just a tool. It’s a relief.</p>
+        </header>
+
+        <div class="highlight-block">
+            "It’s not the big tasks that drain you. It’s the tiny ones you repeat every single day."
+        </div>
+
+        <div class="faq-card">
+            <h3>🤔 Why did we build this?</h3>
+            <p>Because we were tired too. Tired of copying the same note every day. Tired of switching between docs and
+                tabs. Tired of doing what felt like robotic work. You deserve better. So we built it.</p>
+        </div>
+
+
+        <div class="faq-card">
+            <h3>⚠️ Real-life frustration sound familiar?</h3>
+            <p>You open your doc. Copy the same message. Paste. Format. Repeat. Repeat. Repeat. 50 times a week. It
+                drains your focus. Now imagine one click instead.</p>
+        </div>
+
+        <div class="faq-card">
+            <h3>💡 Who is this really for?</h3>
+            <p>For anyone who’s mentally tired of repeating messages. Job seekers, students, recruiters, founders,
+                freelancers if you ever thought
+                “Didn’t I write this already?” this is for you.</p>
+        </div>
+
+        <div class="faq-card">
+            <h3>🔐 What about privacy?</h3>
+            <p>Simple. We don’t store your data. No login. No sync. No cloud. Everything stays with you locally and
+                securely.</p>
+        </div>
+
+        <div class="faq-card">
+            <h3>📈 Will this help my results?</h3>
+            <p>Yes. Not because it writes for you, but because you show up better quicker, calmer, clearer. That’s
+                when real impact happens.</p>
+        </div>
+        <div class="faq-card">
+            <h3>🚀 Imagine This: One Click. Done.</h3>
+            <p>With Connectlift Mate, say goodbye to the endless copy-paste cycle and tab-switching madness. Just one
+                click, and you're free to focus on what really matters. It's all about working smarter, not
+                harder moving forward with ease and speed.</p>
+        </div>
+        <div class="faq-card">
+            <h3>💔 Ever felt exhausted before you even start?</h3>
+            <p> You sit down, ready to work. But before the real work begins, you’re stuck copying, pasting, formatting.
+                The same thing, over and over. You’re not lazy. You’re just human. You deserve tools that work for you,
+                not against you.</p>
+        </div>
+        <div class="faq-card">
+            <h3>❤️ You’re not the problem. The process is.</h3>
+            <p>If you’ve ever felt guilty about procrastinating, about dreading simple tasksyou’re not alone. It’s not
+                about willpower. It’s about using the right tools. Tools that make things easier, so you can finally
+                breathe.</p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Who Is This For?</h2>
+            <ul>
+                <li>📚 Students sending the same note for every internship or placement.</li>
+                <li>💼 Freelancers writing similar proposals to clients daily.</li>
+                <li>🧑‍💼 Recruiters tired of repetitive outreach.</li>
+                <li>💬 Salespeople repeating cold pitches endlessly.</li>
+                <li>🚀 Founders crafting the same investor/partner intros.</li>
+                <li>👩‍🏫 Teachers/coordinators sending regular updates.</li>
+                <li>🌐 Community managers juggling template messages.</li>
+                <li>📝 Content creators tired of writing the same onboarding DMs.</li>
+                <li>💭 Anyone silently thinking: "Why am I repeating myself again?"</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📊 Real-Life Moments You’ll Recognize</h2>
+            <ul>
+                <li>You skipped messaging someone just because it felt like a chore.</li>
+                <li>You sent the same message 6 times in a row and felt silly.</li>
+                <li>You pasted a note from a doc and forgot to edit the name.</li>
+                <li>You felt exhausted before even starting your outreach.</li>
+                <li>You spent more time copying than communicating.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⏳ Pause & Quick Reality Check</h2>
+
+            <ul>
+                <li> Do you repeat the same message multiple times a day?</li>
+                <li> Do you feel emotionally tired before outreach?</li>
+                <li> Do you wish this part of your day felt lighter?</li>
+                <li> Have you delayed tasks just to avoid repetition?</li>
+                <li> Do you dream of frictionless messaging?</li>
+            </ul>
+            <p style="font-size: 20px; font-weight: bold; color: #333;">
+                If you nodded <span style="color: #3b5bdb;">YES</span> even once,
+                then <a href="https://chromewebstore.google.com/detail/connectliftmate/kbagmgoojogjfmcmnhlihjmkfcadambe"
+                    style="color: #3b5bdb; text-decoration: none;">Connectlift Mate</a> is your sign to
+                simplify!
+            </p>
+        </div>
+
+        <div class="sticky-cta">
+            ✨ You Deserve Ease —<a
+                href="https://chromewebstore.google.com/detail/connectliftmate/kbagmgoojogjfmcmnhlihjmkfcadambe">Install
+                Now</a>
+        </div>
+        <a href="../" class="back-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        <footer style="margin-bottom: 60px;">
+            You’ve done enough. Let Connectlift Mate carry the repetition. Save energy. Send better. Live clearer. 💙
+        </footer>
+    </div>
+</body>
+</html>
